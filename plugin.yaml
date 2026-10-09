@@ -1,0 +1,10 @@
+name: wall-clock
+version: 1.0.0
+description: Fresh per-turn wall clock with DST-aware timezone and session age
+provides_hooks:
+  - pre_llm_call
+config_schema:
+  timezone:
+    type: str
+    default: America/New_York
+    description: IANA timezone for the clock; align with the Hermes profile timezone
